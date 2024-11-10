@@ -4,7 +4,7 @@
     {
       "label": "build",
       "type": "shell",
-      "command": "esbuild src/extension.ts --bundle --outfile=out/extension.js --watch",
+      "command": "esbuild src/extension.ts --bundle --external:vscode --outfile=out/extension.js --watch",
       "problemMatcher": {
         "owner": "typescript",
         "fileLocation": ["relative", "${workspaceFolder}"],
